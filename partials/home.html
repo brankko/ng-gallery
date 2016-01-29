@@ -1,2 +1,18 @@
 <h1>Home</h1>
-{{debug}}
+
+<div class="text-center container" ng-repeat="photo in mainPhoto = (photos | filter: {featured:true} | limitTo: 1)">
+	<a href="#/photo/{{photo.photo_id}}">
+		<img ng-src="{{photo.filename}}" alt="{{photo.title}}">
+	</a>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos | filter:{featured:true, photo_id: '!' + mainPhoto[0].photo_id} | limitTo:4">
+			<a href="#/photo/{{photo.photo_id}}">
+				<img class="img-responsive" ng-src="{{photo.filename}}" title="{{photo.title}}"/>
+			</a>
+		</div>
+    </div>
+</div>

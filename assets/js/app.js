@@ -35,8 +35,11 @@ gallery.config(['$routeProvider', function($routeProvider){
 }]);
 
 
-gallery.controller('homeController', function($scope){
-	$scope.debug = 'Home dfsfsdfde';
+gallery.controller('homeController', function($scope, $http){
+
+	$http.get('data/photos.json').success(function(data){
+		$scope.photos = shuffleArray(data);
+	});
 });
 
 
@@ -77,3 +80,14 @@ gallery.controller('photoController', function($scope, $http, $routeParams){
 gallery.controller('submitController', function($scope){
 	$scope.debug = 'Submit';
 });
+
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
