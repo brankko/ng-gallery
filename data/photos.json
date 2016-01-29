@@ -1,0 +1,14 @@
+[
+	{
+		"photo_id": 1,
+		"filename": "photo1.jpg",
+		"title": "the title",
+		"description": "the description",
+		"date": "2016-01-20 17:26:54",
+		"likes": 5,
+		"private": false,
+		"user_id": 1,
+		"category": "Sports",
+		"featured": true
+	}
+]

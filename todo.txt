@@ -1,0 +1,17 @@
+photos.json
+ - copy/paste and change data for images
+ - get some real photos from lorempixel.com
+
+index.html
+menu.html
+header.html
+footer.html
+ - create simple bootstrap layout
+
+homeController
+ - input (photos.json) -> output (one featured photo)
+
+profileController
+ - getMyUserId(email, users.json) -> user_id (of the current user)
+
+ 

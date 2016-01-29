@@ -1,0 +1,47 @@
+Gallery of different things
+
+Pages:
+ - Home - One random page
+ - Photos - latest photos (sort by time, desc, filters)
+ - Photo - single photo view
+ - Users - list of the users (with search filter)
+ - Profile - user profile page (photos from one user)
+ - Sumbit - uploading photos (dummy frontend)
+
+Data:
+ * photo:
+   - photo_id
+   - filename
+   - title
+   - description
+   - date
+   - likes
+   - private
+   - user_id
+   - category
+   - featured
+ * users:
+   - user_id
+   - email
+   - name
+   - password
+   - role
+
+Sitemap:
+ - Home
+ - Users
+ - Photos
+ - My Profile
+ - Sumbit
+
+Categories:
+ - Selfie
+ - Art
+ - Pets
+ - Nature
+ - Technology
+ - XXX
+ - Cars
+ - Sports
+ - Entertaiment
+ 
