@@ -64,8 +64,13 @@ gallery.controller('photosController', function($scope, $http){
 });
 
 
-gallery.controller('photoController', function($scope){
-	$scope.debug = 'Single photo';
+gallery.controller('photoController', function($scope, $http, $routeParams){
+	
+	$http.get('data/photos.json').success(function(data){
+		$scope.photos = data;
+	});
+
+	$scope.id = Number($routeParams.photo_id);
 });
 
 

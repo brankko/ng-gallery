@@ -3,7 +3,9 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos">
-			<img class="img-responsive" ng-src="{{photo.filename}}" title="{{photo.title}}"/>
+			<a href="#/photo/{{photo.photo_id}}">
+				<img class="img-responsive" ng-src="{{photo.filename}}" title="{{photo.title}}"/>
+			</a>
 		</div>
     </div>
 </div>
