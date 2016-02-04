@@ -50,6 +50,12 @@ gallery.controller('usersController', function($scope, $http){
 		$scope.users = data;
 	});
 
+	$scope.limit = 4;
+
+	$scope.viewAll = function(){
+		$scope.limit = $scope.users.length;
+	};
+
 });
 
 

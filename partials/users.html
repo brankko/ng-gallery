@@ -1,2 +1,22 @@
 <h1>Users</h1>
-{{users}}
+
+<div class="container">
+		
+	<div class="row"> 	
+
+		<div class="list-category text-primary">
+	 
+			<div class="list-group">
+				<a href="#" class="list-group-item" ng-repeat="user in users | limitTo: limit">
+					<div class="truncate pull-left">{{user.name}}</div>
+					<span class="badge">{{user.role}}</span>
+				</a>
+			</div>
+			
+            <span class="list-footer">
+			    <button class="btn btn-sm btn-primary" ng-click="viewAll()">View All</button>
+            </span>
+
+		</div>
+	</div>
+</div>

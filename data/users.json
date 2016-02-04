@@ -4,41 +4,41 @@
 		"email": "admin@google.net",
 		"name": "Admin",
 		"password": "",
-		"role": ""
+		"role": "admin"
 	},
 	{
 		"user_id": 2,
 		"email": "artist@google.net",
 		"name": "The Artist",
 		"password": "",
-		"role": ""
+		"role": "artist"
 	},
 	{
 		"user_id": 3,
 		"email": "Moderator@google.net",
 		"name": "Modd",
 		"password": "",
-		"role": ""
+		"role": "moderator"
 	},
 	{
 		"user_id": 4,
 		"email": "user1@google.net",
 		"name": "User 1",
 		"password": "",
-		"role": ""
+		"role": "artist"
 	},
 	{
 		"user_id": 5,
 		"email": "user2@google.net",
 		"name": "user 2",
 		"password": "",
-		"role": ""
+		"role": "fan"
 	},
 	{
 		"user_id": 6,
 		"email": "other@google.net",
 		"name": "Some Other",
 		"password": "",
-		"role": ""
+		"role": "fan"
 	}
 ]
