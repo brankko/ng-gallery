@@ -96,6 +96,10 @@ gallery.controller('photoController', function($scope, $http, $routeParams){
 
 gallery.controller('submitController', function($scope){
 	$scope.debug = 'Submit';
+
+	$scope.uploadPhoto = function(){
+		alert('Here goes photo upload...');
+	};
 });
 
 

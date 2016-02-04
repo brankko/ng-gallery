@@ -1,2 +1,89 @@
 <h1>Submit</h1>
-{{debug}}
+
+<div class="row">
+	
+
+	<form class="form-horizontal">
+		<fieldset>
+
+
+			<!-- File Button --> 
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="file">Image file</label>
+				<div class="col-md-4">
+					<input id="file" name="file" class="input-file" type="file">
+				</div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="category">Category</label>
+				<div class="col-md-4">
+					<select id="category" name="category" class="form-control">
+						<option value="">Selfie</option>
+						<option value="">Art</option>
+						<option value="">Pets</option>
+						<option value="">Nature</option>
+						<option value="">Technology</option>
+						<option value="">XXX</option>
+						<option value="">Cars</option>
+						<option value="">Sports</option>
+						<option value="">Entertaiment</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textinput">Title</label>  
+				<div class="col-md-4">
+					<input id="textinput" name="textinput" type="text" placeholder="title" class="form-control input-md" required="">
+
+				</div>
+			</div>
+
+			<!-- Textarea -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textarea">Description</label>
+				<div class="col-md-4">                     
+					<textarea class="form-control" id="textarea" name="textarea">Photo description</textarea>
+				</div>
+			</div>
+
+			<!-- Multiple Checkboxes -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="private"></label>
+				<div class="col-md-4">
+					<div class="checkbox">
+						<label for="private-0">
+							<input type="checkbox" name="private" id="private-0" value="1">
+							Private
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- Multiple Checkboxes -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="featured"></label>
+				<div class="col-md-4">
+					<div class="checkbox">
+						<label for="featured-0">
+							<input type="checkbox" name="featured" id="featured-0" value="1">
+							Featured
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for=""></label>
+				<div class="col-md-4">
+				<button id="" name="" class="btn btn-primary" ng-click="uploadPhoto()">Submit</button>
+				</div>
+			</div>
+
+		</fieldset>
+	</form>
+</div>
