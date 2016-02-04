@@ -59,8 +59,19 @@ gallery.controller('usersController', function($scope, $http){
 });
 
 
-gallery.controller('profileController', function($scope){
+gallery.controller('profileController', function($scope, $http, $routeParams){
 	$scope.debug = 'Profile';
+
+	$http.get('data/users.json').success(function(data){
+		$scope.users = data;
+	});
+
+	$http.get('data/photos.json').success(function(data){
+		$scope.photos = data;
+	});
+
+	$scope.id = Number($routeParams.user_id);
+
 });
 
 

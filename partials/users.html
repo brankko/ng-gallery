@@ -7,7 +7,7 @@
 		<div class="list-category text-primary">
 	 
 			<div class="list-group">
-				<a href="#" class="list-group-item" ng-repeat="user in users | limitTo: limit">
+				<a href="#/profile/{{user.user_id}}" class="list-group-item" ng-repeat="user in users | limitTo: limit">
 					<div class="truncate pull-left">{{user.name}}</div>
 					<span class="badge">{{user.role}}</span>
 				</a>

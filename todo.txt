@@ -5,8 +5,4 @@ https://github.com/brankko/ng-gallery
 profileController
  - getMyUserId(email, users.json) -> user_id (of the current user)
 
-users.html
-
-profile.html
-
 submit.html

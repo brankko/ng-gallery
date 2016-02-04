@@ -1,4 +1,4 @@
-<div class="text-center row" ng-repeat="photo in photos | filter: {photo_id:id}:true">
+<div class="text-center row" ng-repeat="photo in photos | filter: {photo_id:id}:true | limitTo:1">
 	<h1>{{photo.title}}</h1>
 	<img ng-src="{{photo.filename}}" alt="{{photo.title}}">
 	<p>{{photo.description}}</p>
